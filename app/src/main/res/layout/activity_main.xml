@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F8F3E7">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length Converter"
+        android:textColor="#2C3E50"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Input field for user to enter value -->
+    <EditText
+        android:id="@+id/input_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter value"
+        android:textAlignment="center"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Label for Input Unit Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Input Unit"
+        android:textColor="#5C5E61"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Spinner for selecting input unit -->
+    <Spinner
+        android:id="@+id/from_unit_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/spinner_background" />
+
+    <!-- Label for Output Unit Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Output Unit"
+        android:textColor="#5C5E61"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Spinner for selecting output unit -->
+    <Spinner
+        android:id="@+id/to_unit_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/spinner_background" />
+
+    <!-- Button to trigger the conversion -->
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D1A570"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:background="@drawable/rounded_button" />
+
+    <!-- TextView to display the result -->
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result will be shown here"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="#5C5E61"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/result_background" />
+</LinearLayout>
